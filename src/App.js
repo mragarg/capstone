@@ -20,15 +20,14 @@ class App extends React.Component {
     this.state = {
       drawingData: '',
       drawing: '',
-      activePlayer: false,
+      activePlayer: true,
       drawEnd: false,
       name: '',
       gamePin: '',
       roomId: '',
       socketRoomId: '',
       users: '',
-      redirect: false,
-      isHost: false
+      redirect: false
     };  
   }
 
@@ -132,7 +131,7 @@ class App extends React.Component {
             <HostOrJoin {...props} handleClickHost={this._setPin} />
           )} />
         <Route path='/host' render={(props) => (
-            <HostPage {...props} users={this.state.users} pin={this.state.roomId} resetPin={this._resetPin} confirmHost={this._confirmHost} />
+            <HostPage {...props} users={this.state.users} pin={this.state.roomId} resetPin={this._resetPin} />
           )} />
         <Route path='/join' render={(props) => (
             <JoinPage {...props} nameValue={this.state.name} name={this._handleChangeName} pinValue={this.state.gamePin} pin={this._handleChangePin} submit={this._handleSubmitJoin}/>
@@ -200,13 +199,6 @@ class App extends React.Component {
       socketRoomId: ''
     })
   }
-
-  _confirmHost = () => {
-    this.setState({
-      isHost: true
-    })
-  }
-
 }
 
 

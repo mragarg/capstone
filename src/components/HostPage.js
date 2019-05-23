@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from '../img/picme-logo.png';
 import styled from 'styled-components';
 
-export default function HostPage({pin, resetPin, users, confirmHost}) {
+export default function HostPage({pin, resetPin, users}) {
     // console.log(pin);
     return (
         <Wrapper>
@@ -21,7 +21,7 @@ export default function HostPage({pin, resetPin, users, confirmHost}) {
                 </ul>
             </div>
             <div className={styles.buttonContainer}>
-                <Link to='/' onClick={confirmHost}>
+                <Link to='/'>
                     <Button1>start</Button1>
                 </Link>
                 <Link to='/host-or-join' onClick={resetPin}>
