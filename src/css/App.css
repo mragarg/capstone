@@ -18,3 +18,7 @@ body {
     color: black;
 }
 
+a {
+    display: contents;
+    text-decoration: none !important;
+}
