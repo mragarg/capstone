@@ -14,6 +14,7 @@ import HowToPlay from './components/HowToPlay';
 import WaitPage from './components/WaitPage';
 import styles from './css/JoinPage.module.css';
 import Answer from './components/Answer';
+import './css/App.css';
 // import SubmitAnswer from './components/SubmitAnswer';
 
 class App extends React.Component {
