@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Route,
+  HashRouter
 } from 'react-router-dom';
 import Home from './components/Home';
 import Canvas from './components/Canvas';
@@ -102,6 +103,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <HashRouter basename='/'>
         <Route exact path='/' component={Home} />
         <Route exact path='/how-to-play' component={HowToPlay} />
         <Route path="/answer" component={(props) => (
@@ -122,6 +124,7 @@ class App extends React.Component {
         <Route path ='/canvas' render={(props) =>(
           <Canvas endGame={this.state.endGame} setEndGame={this._setEndGame} resetData={this._resetData} users={this.state.users} hostStatus={this.state.isHost} connection={this.connection} name={this.state.name} points={this.state.pointsArray}/>
         )} />
+        </HashRouter>
       </div>
     )
   }
