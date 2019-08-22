@@ -27,3 +27,8 @@ PicMe is an interactive, multiplayer game which involves challenging players to 
 
 ## What were our headaches?
 A major challenge was having the ability for the drawing to be accurate on personal devices (especially on iOS devices). For example, the lines were off by a millimeter based on the user’s touch as well as the Sketchfield component would move around while the user drew. This issue was detrimental in having a flawless user experience, thus we converted our drawing field from react-canvas-draw to react-sketch. However, this created another problem that we needed to solve – the drawings that appeared “live” on the host page were now delayed. With a few tweaks, we were able to have the user drawing appear live on the host page so everyone can view and guess in real time.
+
+## Login screen
+![](https://media.giphy.com/media/L2qL4iryo1IwCZWPn9/giphy.gif)
+## PicMe demo 
+![](https://media.giphy.com/media/STkUz4JLF50xQ1qet3/giphy.gif)
