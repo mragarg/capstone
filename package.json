@@ -20,7 +20,7 @@
     "react-scripts": "3.0.0",
     "react-sketch": "^0.5.1",
     "styled-components": "^4.2.0",
-    "ws": "^7.0.0"
+    "ws": "^7.4.6"
   },
   "scripts": {
     "start": "react-scripts start",
